@@ -1,0 +1,35 @@
+{
+  "name": "primarykeysrentals",
+  "version": "1.0.0",
+  "description": "A website that allows users to search for local rental cars.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TottoMoe/PrimaryKeysRentals.git"
+  },
+  "author": "Blessed Adodo, Hunter Brennan, Jenny Deng, Kayla Dong, Darwin Sandoval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TottoMoe/PrimaryKeysRentals/issues"
+  },
+  "homepage": "https://github.com/TottoMoe/PrimaryKeysRentals#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1"
+  }
+}
