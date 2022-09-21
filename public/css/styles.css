@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@400;600;900&display=swap');
+@import 'animate.css';
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.col-lg-5 {
+  object-fit: cover;
+}
+
+.row{
+border-radius: 30px;
+background: #fff;
+box-shadow: 10px 10px 20px;
+}
+
+.login img{
+  height:600px;
+  width:550px;
+  border-top-left-radius:30px;
+  border-bottom-left-radius: 30px;
+}
+
