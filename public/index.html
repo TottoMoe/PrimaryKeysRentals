@@ -21,8 +21,8 @@
       </div>
       <div class="col-lg-7 text-center py-5">
         <h1 class="animate__animated animate__pulse animate__infinite pb-5">Primary Keys Rentals</h1>
-
-        <form>
+        <!--Login Form-->
+        <form class="form form--hidden">
           <div class="form-row py-4 pt-5">
             <div class="offset-1 col-lg-10">
               <input type="text" class="inp px-3" placeholder="Email">
@@ -39,7 +39,35 @@
             </div>
           </div>
         </form>
-        <div class="form-row">
+        <!--Sign Up Form-->
+        <form class="form" id="createAccount">
+          <div class="form-row py-4 pt-5">
+            <div class="offset-1 col-lg-10">
+              <input type="text" class="inp px-3" placeholder="UserName">
+            </div>
+          </div>
+          <div class="form-row py-4">
+            <div class="offset-1 col-lg-10">
+              <input type="text" class="inp px-3" placeholder="Email Address">
+            </div>
+          </div>
+          <div class="form-row py-4">
+            <div class="offset-1 col-lg-10">
+              <input type="text" class="inp px-3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-row py-4">
+            <div class="offset-1 col-lg-10">
+              <input type="text" class="inp px-3" placeholder="Confirm Password">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="offset-1 col-lg-10">
+              <button class="btn1" type="submit">Create Account</button>
+            </div>
+          </div>
+        </form>
+        <div class="form-row form--hidden">
           <div class="offset-1 py-3 col-lg-10">
             <button class="btn2">Sign Up</button>
           </div>
