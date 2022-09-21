@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@400;600;900&display=swap');
 @import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
   font-family: 'Poppins', sans-serif;
   padding: 0;
@@ -22,9 +23,12 @@ box-shadow: 10px 10px 20px;
 }
 
 .login img{
-  height:600px;
-  width:550px;
   border-top-left-radius:30px;
   border-bottom-left-radius: 30px;
+}
+
+.login h1{
+  font-size: 3.5rem;
+  font-family: 'Pacifico', cursive;
 }
 
