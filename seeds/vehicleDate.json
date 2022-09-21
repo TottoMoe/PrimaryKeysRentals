@@ -1,0 +1,23 @@
+[
+  {
+    "Vehicle": "Car One",
+    "Model": "Toyota",
+    "Year": 2020,
+    "Price": "$80 per Day",
+    "user_id": 1
+  },
+  {
+    "Vehicle": "Car Two",
+    "Model": "Nissan",
+    "Year": 2021,
+    "Price": "$100 per Day",
+    "user_id": 2
+  },
+  {
+    "Vehicle": "Car Three",
+    "Model": "Honda",
+    "Year": 2022,
+    "Price": "$110 per Day",
+    "user_id": 3
+  }
+]

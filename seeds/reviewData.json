@@ -1,0 +1,12 @@
+[
+  {
+    "review": "It was a nice car",
+    "user_id": 2,
+    "vehicle_id": 1
+  },
+  {
+    "review": "The car look is a new car",
+    "user_id": 3,
+    "vehicle_id": 1
+  }
+]
