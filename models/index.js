@@ -3,17 +3,17 @@ const Vehicle = require('./Vehicle');
 const Review = require('./Review');
 
 Vehicle.belongsTo(User, {
-  foreignKey: 'userId',
+  foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
 Vehicle.hasMany(Review, {
-  foreignKey: 'vehiclId',
+  foreignKey: 'vehicle_id',
   onDelete: 'CASCADE',
 });
 
 Review.belongsTo(User, {
-  foreignKey: 'userId',
+  foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
