@@ -1,5 +1,5 @@
-// const router = require('express').Router();
-// const { User } = require('../../models');
+const router = require('express').Router();
+const { User } = require('../../models');
 
 // Create a new user
 router.post('/', async (req, res) => {
@@ -33,22 +33,18 @@ router.post('/login', async (req, res) => {
     });
 
     if (!userData) {
-      res
-        .status(400)
-        .json({
-          message: 'Incorrect email address or password. Please try again.',
-        });
+      res.status(400).json({
+        message: 'Incorrect email address or password. Please try again.',
+      });
       return;
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
-      res
-        .status(400)
-        .json({
-          message: 'Incorrect email address or password. Please try again.',
-        });
+      res.status(400).json({
+        message: 'Incorrect email address or password. Please try again.',
+      });
       return;
     }
 
@@ -79,4 +75,3 @@ router.post('/logout', (req, res) => {
 });
 
 module.exports = router;
-
