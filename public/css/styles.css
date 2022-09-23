@@ -8,8 +8,19 @@
   box-sizing: border-box;
 }
 
+header{
+  background-color:#f8f9fa;
+  height: 130px;
+  box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
+width:100%;
+position: fixed;
+}
+
 h1 {
   font-weight: 600;
+  font-family: 'Pacifico', cursive;
   /* padding-bottom: 30px; */
 }
 
@@ -80,3 +91,7 @@ box-shadow: 10px 10px 20px;
   background-color: red;
 }
 
+.mainTitle{
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
