@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
 const vehicleRoutes = require('./vehicleRoutes');
