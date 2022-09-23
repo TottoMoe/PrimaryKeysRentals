@@ -24,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 // View one specific vehicle
-router.get('/vehicle/:id', async (req, res) => {
+router.get('/vehicle/:id', withAuth, async (req, res) => {
   try {
     const vehicleData = await Vehicle.findbyPk(req.params.id, {
       include: [
@@ -38,6 +38,9 @@ router.get('/vehicle/:id', async (req, res) => {
           },
         },
       ],
+      where: {
+        user_id: req.session.user_id,
+      },
     });
 
     const vehicle = vehicleData.get({ plain: true });
