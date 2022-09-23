@@ -10,6 +10,7 @@
 
 h1 {
   font-weight: 600;
+  /* padding-bottom: 30px; */
 }
 
 .col-lg-5 {
@@ -73,5 +74,9 @@ box-shadow: 10px 10px 20px;
 
 .form-hidden{
   display:none;
+}
+
+.card-container{
+  background-color: red;
 }
 
