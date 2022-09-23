@@ -22,7 +22,7 @@ background: #fff;
 box-shadow: 10px 10px 20px;
 }
 
-.loginPage img{
+.login img{
   border-top-left-radius:30px;
   border-bottom-left-radius: 30px;
 }
@@ -71,14 +71,7 @@ box-shadow: 10px 10px 20px;
   color: gray
 }
 
-.form--hidden{
+.form-hidden{
   display:none;
-}
-
-
-@media (max-width:991px){
-  .loginPage img{
-    border-top-right-radius: 30px;
-  }
 }
 
