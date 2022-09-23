@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/config");
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/config');
 
 class Vehicle extends Model {}
 
@@ -11,19 +11,23 @@ Vehicle.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    Vehicle: {
+    vehicle: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Model: {
+    model: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Year: {
+    year: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    Price: {
+    price: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    filename: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,7 +37,7 @@ Vehicle.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "Vehicle",
+    modelName: 'Vehicle',
   }
 );
 
