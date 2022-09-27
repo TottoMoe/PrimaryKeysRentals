@@ -123,11 +123,37 @@ box-shadow: 10px 10px 20px;
   margin-bottom: 10px;
 }
 
-.card-column{
 
+.card-column{
+  float:left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+.card-row{
+  margin: 0 -5px;
+}
+
+.row::after {
+  content:"";
+  display: table;
+  clear:both;
 }
 
 .card{
   margin:10px;
+}
+
+.card-img-top{
+  height: 500px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .card-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
