@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/config");
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/config');
 
 class Review extends Model {}
 
@@ -14,13 +14,27 @@ Review.init(
     review: {
       type: DataTypes.STRING,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'User',
+        key: 'id',
+      },
+    },
+    vehicle_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Vehicle',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "Review",
+    modelName: 'Review',
   }
 );
 
