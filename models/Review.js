@@ -14,6 +14,20 @@ Review.init(
     review: {
       type: DataTypes.STRING,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'User',
+        key: 'id',
+      },
+    },
+    vehicle_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Vehicle',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,

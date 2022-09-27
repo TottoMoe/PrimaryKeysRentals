@@ -8,5 +8,15 @@
     "review": "The car look is a new car",
     "user_id": 3,
     "vehicle_id": 1
+  },
+  {
+    "review": "The seats were quite comfortable.",
+    "user_id": 1,
+    "vehicle_id": 2
+  },
+  {
+    "review": "Drives smoothly overall.",
+    "user_id": 4,
+    "vehicle_id": 3
   }
 ]
