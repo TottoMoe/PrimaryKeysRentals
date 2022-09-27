@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap and CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/styles.css">
-<!--animate.css animation tool-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--animate.css animation tool-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Primary Keys Rentals</title>
 </head>
+
 <body>
-<section class="login py-5 bg-light">
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-lg-5">
-        <img src="./Images/pexels-hassan-ouajbir-804130.jpg" class="img-fluid" alt="Primary-keys-rental-logo">
-      </div>
-      <div class="col-lg-7 text-center py-5">
-        <h1 class="animate__animated animate__pulse animate__infinite pb-5">Primary Keys Rentals</h1>
-        <!--Login Form-->
-        <form class="form" id="login">
-          <div class="form-row py-4 pt-5">
-            <div class="offset-1 col-lg-10">
-              <input type="text" class="inp px-3" placeholder="Email">
+  <section class="login py-5 bg-light">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-5">
+          <img src="./Images/pexels-hassan-ouajbir-804130.jpg" class="img-fluid" alt="Primary-keys-rental-logo">
+        </div>
+        <div class="col-lg-7 text-center py-5">
+          <h1 class="animate__animated animate__pulse animate__infinite pb-5">Primary Keys Rentals</h1>
+          <!--Login Form-->
+          <form class="form" id="login">
+            <div class="form-row py-4 pt-5">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" placeholder="Email">
+              </div>
             </div>
-          </div>
-          <div class="form-row py-4">
-            <div class="offset-1 col-lg-10">
-              <input type="text" class="inp px-3" placeholder="Password">
+            <div class="form-row py-4">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" placeholder="Password">
+              </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="offset-1 col-lg-10">
-              <a href="/PrimaryKeysRentals/public/main.html" target="_blank">
-                <button class="btn1" id="linkLogin">Login</button>
-              </a>
+            <div class="form-row">
+              <div class="offset-1 col-lg-10">
+                <a href="/PrimaryKeysRentals/public/main.html" target="_blank">
+                  <button class="btn1" id="linkLogin">Login</button>
+                </a>
+              </div>
             </div>
-          </div>
-        </form>
-        <!--SignUp Form Page below-->
-        <!--****************************************-->
-        <!--UserName Form-->
-        <form class="form form-hidden" id="createAccount">
-          <div class="form-row py-4 pt-5">
-            <div class="offset-1 col-lg-10">
-              <input type="text" class="inp px-3" placeholder="UserName">
+          </form>
+          <!--SignUp Form Page below-->
+          <!--****************************************-->
+          <!--UserName Form-->
+          <form class="form form-hidden" id="createAccount">
+            <div class="form-row py-4 pt-5">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" placeholder="UserName">
+              </div>
             </div>
-          </div>
-          <!--Email form-->
-          <div class="form-row py-4">
-            <div class="offset-1 col-lg-10">
-              <input type="text" class="inp px-3" placeholder="Email Address">
+            <!--Email form-->
+            <div class="form-row py-4">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" placeholder="Email Address">
+              </div>
             </div>
-          </div>
-          <!--Password form-->
-          <div class="form-row py-4">
-            <div class="offset-1 col-lg-10">
-              <input type="text" class="inp px-3" placeholder="Password">
+            <!--Password form-->
+            <div class="form-row py-4">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" placeholder="Password">
+              </div>
             </div>
           </div>
           <!--Create Account Button-->
+            <div class="form-row">
+              <div class="offset-1 col-lg-10">
+                <button class="btn1" type="submit">Create Account</button>
+              </div>
+            </div>
+          </form>
+          <!--Sign Up Button-->
           <div class="form-row">
-            <div class="offset-1 col-lg-10">
-              <button class="btn1"" type="submit">Create Account</button>
+            <div class="offset-1 py-3 col-lg-10">
+              <button class="btn2" id="linkCreateAccount" type="submit">Sign Up</button>
             </div>
           </div>
-        </form>
-        <!--Sign Up Button-->
-        <div class="form-row">
-          <div class="offset-1 py-3 col-lg-10">
-            <button class="btn2" id="linkCreateAccount" type="submit">Sign Up</button>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<script src="./js/main.js"></script>  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

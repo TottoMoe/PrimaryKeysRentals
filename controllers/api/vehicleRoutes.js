@@ -34,8 +34,8 @@ router.get('/vehicle/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const newVehicle = await Post.create({
-      vehicle: req.body.title,
-      module: req.body.module,
+      vehicle: req.body.vehicle,
+      model: req.body.model,
       year: req.body.year,
       price: req.body.price,
       filename: req.body.filename,
