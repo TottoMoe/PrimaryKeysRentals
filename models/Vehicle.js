@@ -23,6 +23,10 @@ Vehicle.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    category: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     price: {
       type: DataTypes.STRING,
       allowNull: false,

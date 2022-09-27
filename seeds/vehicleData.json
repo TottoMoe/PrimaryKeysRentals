@@ -4,6 +4,7 @@
     "model": "Toyota",
     "year": 2020,
     "price": "$80 per Day",
+    "category": "Economy",
     "filename": "img1",
     "user_id": 1
   },
@@ -12,6 +13,7 @@
     "model": "Nissan",
     "year": 2021,
     "price": "$100 per Day",
+    "category": "Luxury",
     "filename": "img2",
     "user_id": 2
   },
@@ -20,6 +22,7 @@
     "model": "Honda",
     "year": 2022,
     "price": "$110 per Day",
+    "category": "Electric",
     "filename": "img3",
     "user_id": 3
   }
