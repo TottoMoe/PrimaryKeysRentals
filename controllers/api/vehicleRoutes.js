@@ -37,6 +37,7 @@ router.post('/', async (req, res) => {
       vehicle: req.body.vehicle,
       model: req.body.model,
       year: req.body.year,
+      category: req.body.category,
       price: req.body.price,
       filename: req.body.filename,
       user_id: req.session.user_id,
