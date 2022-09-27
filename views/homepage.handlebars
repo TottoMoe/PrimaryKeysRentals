@@ -38,6 +38,11 @@
     <section>
       <h1 class="mainTitle">Primary Keys Rentals</h1>
     </section>
+    <section class="card-display">
+      {{#each vehicles as |vehicle|}}
+      {{> vehiclecards}}
+      {{/each}}
+    </section>
   </header>
   <section>
     <div class="card-container">
@@ -49,3 +54,4 @@
     </div>
     
   </section>
+  <script src="/js/logout.js"></script>
