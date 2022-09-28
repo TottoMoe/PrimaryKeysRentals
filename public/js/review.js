@@ -1,25 +1,21 @@
-const commentFormHandler = async function (event) {
+const reviewFormHandler = async (event) => {
   event.preventDefault();
 
-  const postId = document.querySelector('input[name="post-id"]').value;
-  const body = document.querySelector('textarea[name="comment-body"]').value;
+  const review = document.querySelector('textarea[name="review-body"]').value;
 
-  if (body) {
-    await fetch('/api/comment', {
-      method: 'POST',
-      body: JSON.stringify({
-        postId,
-        body,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+  await fetch('/api/reviews', {
+    method: 'POST',
+    body: JSON.stringify({
+      review,
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 
-    document.location.reload();
-  }
+  document.location.replace('/homepage');
 };
 
 document
-  .querySelector('#new-comment-form')
-  .addEventListener('submit', commentFormHandler);
+  .querySelector('#new-review-form')
+  .addEventListener('submit', reviewFormHandler);

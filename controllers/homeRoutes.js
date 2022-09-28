@@ -14,7 +14,7 @@ router.get('/', withAuth, async (req, res) => {
 
     const vehicles = vehicleData.map((vehicle) => vehicle.get({ plain: true }));
 
-    res.render('/', {
+    res.render('homepage', {
       vehicles,
       logged_in: req.session.logged_in,
     });
@@ -56,6 +56,7 @@ router.get('/vehicle/:id', withAuth, async (req, res) => {
 // Get login page
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to the home page
+  console.log(req.session);
   if (req.session.logged_in) {
     res.redirect('/');
     return;
