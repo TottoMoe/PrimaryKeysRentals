@@ -2,28 +2,84 @@
   {
     "vehicle": "Car One",
     "model": "Toyota",
-    "year": 2020,
-    "price": "$80 per Day",
+    "year": 2022,
+    "price": "$110 per Day",
     "category": "Economy",
-    "filename": "img1",
+    "filename": "2022-toyota-corolla.png",
     "user_id": 1
   },
   {
     "vehicle": "Car Two",
-    "model": "Nissan",
+    "model": "Honda",
     "year": 2021,
     "price": "$100 per Day",
-    "category": "Luxury",
-    "filename": "img2",
+    "category": "Economy",
+    "filename": "2021-honda-civic-hatchback.png",
     "user_id": 2
   },
   {
     "vehicle": "Car Three",
-    "model": "Honda",
-    "year": 2022,
-    "price": "$110 per Day",
-    "category": "Electric",
-    "filename": "img3",
+    "model": "Ford",
+    "year": 2020,
+    "price": "$80 per Day",
+    "category": "Economy",
+    "filename": "2020-ford-ecosport.png",
     "user_id": 3
+  },
+  {
+    "vehicle": "Car Four",
+    "model": "Lamborghini",
+    "year": 2022,
+    "price": "$350 per Day",
+    "category": "luxury",
+    "filename": "lamborghini-aventador-lp780-4-ultimae-2022.png",
+    "user_id": 4
+  },
+  {
+    "vehicle": "Car Five",
+    "model": "Rolls-Royce",
+    "year": 2021,
+    "price": "$300 per Day",
+    "category": "luxury",
+    "filename": "2021-rolls-royce-cullinan.png",
+    "user_id": 5
+  },
+  {
+    "vehicle": "Car one",
+    "model": "Cadillac",
+    "year": 2020,
+    "price": "$250 per Day",
+    "category": "luxury",
+    "filename": "2020-cadillac-xt4.png",
+    "user_id": 1
+  },
+  {
+    "vehicle": "Car Two",
+    "model": "Kia",
+    "year": 2022,
+    "price": "$180 per Day",
+    "category": "Electric",
+    "filename": "2022-kia-ev6.png",
+    "user_id": 2
+  },
+  {
+    "vehicle": "Car Three",
+    "model": "Tesla",
+    "year": 2021,
+    "price": "$160 per Day",
+    "category": "Electric",
+    "filename": "2021-tesla-modely.png",
+    "user_id": 3
+  },
+  {
+    "vehicle": "Car Four",
+    "model": "Hyundai",
+    "year": 2020,
+    "price": "$138 per Day",
+    "category": "Electric",
+    "filename": "2020-hyundai-kona-ev.png",
+    "user_id": 4
   }
 ]
+
+
