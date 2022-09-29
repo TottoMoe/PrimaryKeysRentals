@@ -27,6 +27,7 @@
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
+    "jquery": "^3.6.1",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.8",
     "sequelize": "^6.23.0"
