@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 header{
   background-color:#f8f9fa;
   box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
@@ -16,6 +20,7 @@ header{
 width:100%;
 position: fixed;
 z-index: 1;
+font-size: 20px;
 }
 
 h1 {
@@ -166,6 +171,16 @@ box-shadow: 10px 10px 20px;
   background-color: #e71d36;
   color: #fff;
   border-color: #e71d36;
+}
+
+#logOut-btn{
+  margin-left: 10px;
+}
+
+#cart-btn{
+  border:none;
+  outline:none;
+  background-color: #f8f9fa;
 }
 
 
