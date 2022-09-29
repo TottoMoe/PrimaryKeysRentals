@@ -1,19 +1,22 @@
 const reviewFormHandler = async (event) => {
   event.preventDefault();
 
+  const vehicleId = document.querySelector('input[name="vehicle_id"]').value;
   const review = document.querySelector('textarea[name="review-body"]').value;
 
-  await fetch('/api/reviews', {
-    method: 'POST',
-    body: JSON.stringify({
-      review,
-    }),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-
-  document.location.replace('/homepage');
+  if (review) {
+    await fetch('/api/reviews', {
+      method: 'POST',
+      body: JSON.stringify({
+        vehicleId,
+        review,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    document.location.reload();
+  }
 };
 
 document
