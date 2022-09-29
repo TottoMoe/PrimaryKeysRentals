@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const signUpButton = document.querySelector('#linkCreateAccount');
 
   document.querySelector('#linkCreateAccount').addEventListener('click', (e) => {
-      e.preventDefault();
-      signUpButton.classList.add('form-hidden');
-      loginForm.classList.add('form-hidden');
-      createAccountForm.classList.remove('form-hidden');
-    });
+    e.preventDefault();
+    signUpButton.classList.add('form-hidden');
+    loginForm.classList.add('form-hidden');
+    createAccountForm.classList.remove('form-hidden');
+  });
 
   document.querySelector('#linkLogin').addEventListener('click', (e) => {
     e.preventDefault();
