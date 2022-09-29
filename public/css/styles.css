@@ -14,7 +14,7 @@ header{
 -webkit-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
 width:100%;
-position: fixed;
+/* position: fixed; */
 z-index: 1;
 }
 
@@ -146,6 +146,15 @@ box-shadow: 10px 10px 20px;
 
 .card-img-top{
   height: 500px;
+}
+
+.cart{
+  background-color: #f8f9fa;
+  width:80%;
+  height: 150px;
+  margin-bottom:30px;
+  margin-top:30px;
+  margin-left:30px
 }
 
 
