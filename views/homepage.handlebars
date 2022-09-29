@@ -43,10 +43,12 @@
     </section>
     <section class="card-display">
       {{#each vehicles as |vehicle|}}
+      <!-- Start partials -->
       {{> vehiclecards}}
-      {{/each}}
+      <!-- end partials -->
+      {{/each}}  
     </section>
-  <section>
+  {{!-- <section>
     <div class="card-container">
       <div class="row g-0">
         <div class="col-lg-5">
@@ -55,6 +57,6 @@
       </div>
     </div>
     
-  </section>
+  </section> --}}
   <script src='/js/cart.js'></script>
   <script src="/js/logout.js"></script>
