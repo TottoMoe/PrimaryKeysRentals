@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const createAccountForm = document.querySelector('#createAccount');
   const signUpButton = document.querySelector('#linkCreateAccount');
 
-  document
-    .querySelector('#linkCreateAccount')
-    .addEventListener('click', (e) => {
+  document.querySelector('#linkCreateAccount').addEventListener('click', (e) => {
       e.preventDefault();
       signUpButton.classList.add('form-hidden');
       loginForm.classList.add('form-hidden');
@@ -18,3 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     createAccountForm.classList.add('form-hidden');
   });
 });
+
+
+
