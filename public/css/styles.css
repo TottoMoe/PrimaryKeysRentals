@@ -14,7 +14,7 @@ header{
 -webkit-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
 width:100%;
-/* position: fixed; */
+position: fixed;
 z-index: 1;
 }
 
@@ -31,6 +31,10 @@ h2{
   transform: translate(-50%, -50%);
   font-family: 'Pacifico', cursive;
   font-size: 60px;
+}
+
+h5{
+  font-weight: bold;
 }
 
 .col-lg-5 {
@@ -155,6 +159,13 @@ box-shadow: 10px 10px 20px;
   margin-bottom:30px;
   margin-top:30px;
   margin-left:30px
+}
+
+#logOut-btn, #search-btn, #card-btn{
+  margin-left: 7px;
+  background-color: #e71d36;
+  color: #fff;
+  border-color: #e71d36;
 }
 
 
