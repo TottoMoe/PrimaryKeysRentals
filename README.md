@@ -5,43 +5,47 @@
 ***
 
 ## Description
-This application was created for internet retail also know as e-commerce, which routes being tested in Insomnia Core for the GET, POST, PUT, and DELETE routes to return all categories, all products, and all tags being tested.  This application use Express.js API and configure it to use Sequelize to interact with a MySQL database.
+This is an application for a mock company called "Primary Keys Rentals". The primary function is to allow users to view rental cars after logging in with an account and to add any cars they are interested in to a cart. Users can also filter out specific vehicles in certain categories using a dropdown menu. Additionally, they can even click the Reviews button on the cards to read any reviews that previous renters have posted and are also granted the option to post their own reviews.
 ***
 
 ## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Test](#test)
-4. [Questions](#questions)
+1. [Technologies Used](#technologies)
+2. [Screenshots](#screenshots)
+3. [Links](#links)
 ***
 
-<a name="installation"></a>
-## Installation Instructions
+<a name="technologies"></a>
+## Technologies Used
   
-The user should clone the repository from GitHub and download Node.js and Insomnia. This application also requires  to npm install node_modules, package-lock.json, and npm install MySql
+* HTML
+
+* Bootstrap (CSS)
+
+* Animate.css
+
+* JavaScript
+
+* Express.js
+
+* Node.js
+
+* MySQL
+
+* Sequelize
+
+* MVC
 ***
 
-<a name="usage"></a>
-## Usage Information
-  
-Use Insomnia to set the GET, POST, PUT, and DELETE routes to configured the JSON formatted databases. 
-[Usage Video](https://drive.google.com/file/d/1trtRJW92SwRwxESsmI-Y8FzvJawAuSw9/view)
+<a name="screenshots"></a>
+## Screenshots
+
+![Login page](./Assets/Screen%20Shot%202022-09-28%20at%2010.29.21%20PM.png)
 ***
 
-<a name="test"></a>
-## Test ScreenShot
-![Screen-Shot](./categoriesSS.png)
-![Screen-Shot](./productsSS.png)
-![Screen-Shot](./tagsSS.png)
+<a name="links"></a>
+## Links
 
+[Deployed-Application](https://primary-keys-rentals.herokuapp.com/)
 
-<a name="questions"></a>
-## Questions
-  
-### GitHub Profile:
-https://github.com/TottoMoe
-  
-### Contact Me:
-If you have any additional questions, please send me an email.
-#### jennydhj@gmail.com 
+[Repo-Link](https://github.com/TottoMoe/PrimaryKeysRentals)
 ***
