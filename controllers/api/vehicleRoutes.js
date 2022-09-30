@@ -16,19 +16,19 @@ router.get('/', async (req, res) => {
 });
 
 // GET one vehicle
-router.get('/vehicle/:id', async (req, res) => {
-  try {
-    const dbVehicleData = await Vehicle.findByPk(req.params.id);
+// router.get('/vehicle/:id', async (req, res) => {
+//   try {
+//     const dbVehicleData = await Vehicle.findByPk(req.params.id);
 
-    const vehicles = dbVehicleData.map((vehicle) =>
-      vehicle.get({ plain: true })
-    );
-    res.json(vehicles);
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
+//     const vehicles = dbVehicleData.map((vehicle) =>
+//       vehicle.get({ plain: true })
+//     );
+//     res.json(vehicles);
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
 // POST one vehicle
 router.post('/', async (req, res) => {
