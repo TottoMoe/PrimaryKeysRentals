@@ -14,13 +14,19 @@ body{
 
 header{
   background-color:#f8f9fa;
-  box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 5px 5px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 5px 5px -1px rgba(108, 106, 106, 0.75);
+-webkit-box-shadow: -1px 5px 5px -1px rgba(62, 61, 61, 0.75);
+-moz-box-shadow: -1px 5px 5px -1px rgba(52, 51, 51, 0.75);
 width:100%;
-/* position: fixed; */
-z-index: 1;
+height:100px;
+padding: 15px;
+z-index: 2;
 font-size: 20px;
+}
+
+
+nav{
+  z-index: 2;
 }
 
 footer{
