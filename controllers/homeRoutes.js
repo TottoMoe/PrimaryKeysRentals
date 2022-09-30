@@ -6,11 +6,7 @@ const withAuth = require('../utils/auth');
 // View all vehicles upon logging in
 router.get('/', withAuth, async (req, res) => {
   try {
-    const vehicleData = await Vehicle.findAll({
-      where: {
-        user_id: req.session.user_id,
-      },
-    });
+    const vehicleData = await Vehicle.findAll();
 
     const vehicles = vehicleData.map((vehicle) => vehicle.get({ plain: true }));
 
@@ -38,9 +34,9 @@ router.get('/vehicle/:id', withAuth, async (req, res) => {
           },
         },
       ],
-      where: {
-        user_id: req.session.user_id,
-      },
+      // where: {
+      //   user_id: req.session.user_id,
+      // },
     });
 
     const vehicle = vehicleData.get({ plain: true });
