@@ -6,11 +6,7 @@ const withAuth = require('../utils/auth');
 // View all vehicles upon logging in
 router.get('/', withAuth, async (req, res) => {
   try {
-    const vehicleData = await Vehicle.findAll({
-      where: {
-        user_id: req.session.user_id,
-      },
-    });
+    const vehicleData = await Vehicle.findAll();
 
     const vehicles = vehicleData.map((vehicle) => vehicle.get({ plain: true }));
 
@@ -26,7 +22,7 @@ router.get('/', withAuth, async (req, res) => {
 // View one specific vehicle
 router.get('/vehicle/:id', withAuth, async (req, res) => {
   try {
-    const vehicleData = await Vehicle.findbyPk(req.params.id, {
+    const vehicleData = await Vehicle.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -38,9 +34,6 @@ router.get('/vehicle/:id', withAuth, async (req, res) => {
           },
         },
       ],
-      where: {
-        user_id: req.session.user_id,
-      },
     });
 
     const vehicle = vehicleData.get({ plain: true });
@@ -50,6 +43,7 @@ router.get('/vehicle/:id', withAuth, async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

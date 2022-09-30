@@ -17,6 +17,11 @@ Review.belongsTo(User, {
   onDelete: 'CASCADE',
 });
 
+Review.belongsTo(Vehicle, {
+  foreignKey: 'vehicle_id',
+  onDelete: 'CASCADE',
+});
+
 User.hasMany(Vehicle, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
