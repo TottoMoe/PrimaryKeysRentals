@@ -2,7 +2,7 @@ const signupFormHandler = async (event) => {
   event.preventDefault();
 
   const usernameEl = document.querySelector('#username-input-signup');
-  const emailEl = document.querySelector ('#email-input-signup');
+  const emailEl = document.querySelector('#email-input-signup');
   const passwordEl = document.querySelector('#password-input-signup');
 
   const response = await fetch('/api/users', {
@@ -16,7 +16,7 @@ const signupFormHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace('/homepage');
+    document.location.replace('/');
   } else {
     alert('Failed to sign up');
   }
