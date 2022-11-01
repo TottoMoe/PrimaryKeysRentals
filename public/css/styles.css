@@ -13,20 +13,23 @@ body{
 }
 
 header{
-  background-color:#f8f9fa;
+  background-color:#ebebeb;
+  position:fixed;
   box-shadow: -1px 5px 5px -1px rgba(108, 106, 106, 0.75);
 -webkit-box-shadow: -1px 5px 5px -1px rgba(62, 61, 61, 0.75);
 -moz-box-shadow: -1px 5px 5px -1px rgba(52, 51, 51, 0.75);
 width:100%;
-height:100px;
-padding: 15px;
+height:110px;
+padding: 10px;
 z-index: 2;
 font-size: 20px;
 }
 
 
 nav{
+  height:100%;
   z-index: 2;
+  background-color: #ebebeb !important;
 }
 
 footer{
@@ -59,7 +62,16 @@ h5{
 
 a{
   text-decoration: none;
-  color:#000;
+  color:#121212;
+}
+
+a:hover {
+  color:#fff;
+}
+
+.navbar-collapse {
+  background-color:#ebebeb !important;
+  padding: 10px;
 }
 
 .col-lg-5 {
@@ -135,6 +147,7 @@ box-shadow: 10px 10px 20px;
 }
 
 .hero-image-container{
+  background-color: #000;
   text-align: center;
   color:#fff;
   position: relative;
@@ -143,8 +156,8 @@ box-shadow: 10px 10px 20px;
 
 .heroImage{
   width:100%;
-  height:60vh;
-  opacity: 1;
+  height:100vh;
+  opacity: 0.4;
   object-fit: cover;
   box-shadow: 1px 0px 18px 2px rgba(0,0,0,0.47);
   -webkit-box-shadow: 1px 0px 18px 2px rgba(0,0,0,0.47);
@@ -154,6 +167,7 @@ box-shadow: 10px 10px 20px;
 
 .card-display{
   display:block;
+  background-color: #ebebeb;
 }
 
 .card-column{
@@ -177,11 +191,12 @@ box-shadow: 10px 10px 20px;
 }
 
 .card-img-top{
-  height: 500px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .cart{
-  background-color: #f8f9fa;
+  background-color: #ebebeb;
   width:80%;
   height: 150px;
   margin-bottom:30px;
@@ -203,8 +218,21 @@ box-shadow: 10px 10px 20px;
 #cart-btn{
   border:none;
   outline:none;
-  background-color: #f8f9fa;
+  background-color: #ebebeb;
 }
+
+
+/* ///////////////////// */
+/* REVIEW SECTION  */
+/* //////////////////// */
+
+.post-body {
+  
+}
+
+/* /////////////////// */
+/* CART SECTION STYLING */
+/* /////////////////// */
 
 .cart-title{
   text-align: center;
